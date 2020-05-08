@@ -414,7 +414,7 @@ redis_configure_default() {
         redis_conf_set bind 0.0.0.0 # Allow remote connections
         # Enable AOF https://redis.io/topics/persistence#append-only-file
         # Leave default fsync (every second)
-        redis_conf_set appendonly yes
+        # redis_conf_set appendonly yes
         # Disable RDB persistence, AOF persistence already enabled.
         # Ref: https://redis.io/topics/persistence#interactions-between-aof-and-rdb-persistence
         redis_conf_set save ""
